@@ -30,6 +30,7 @@ const Payment = () => (
                 <th className="px-10">Transaction No</th>
                 <th className="px-10">Time</th>
                 <th className="px-10 text-left"></th>
+                <th className="px-10 text-left"></th>
             </tr>
             <tbody>
                 {
@@ -49,6 +50,8 @@ const Payment = () => (
                                 <FontAwesomeIcon className="text-xs mr-2" icon={faCircle}/> 
                                 <span className="text-xs">{item.payment}</span>
                             </div>
+                        </td>
+                        <td>
                             <div>
                                 <FontAwesomeIcon className="text-grey-400 text-2xl" icon={faAngleDown} />
                             </div>
@@ -56,21 +59,6 @@ const Payment = () => (
                     </tr>     
                     ))
                 }
-                <tr className="border-b border-grey-500">
-                    <td className="flex items-center px-10 py-5"><p className="rounded-full bg-grey-800 text-center text-white flex items-center justify-center mr-6" style={{width: 40, height: 40}}>VW</p>Apple Mac Book 15” 250 SSD 12GB</td>
-                    <td className="px-10"><p className="text-center">$73430</p></td>
-                    <td className="px-10">1234567890</td>
-                    <td className="px-10">12:30</td>
-                    <td className="px-10 inline-flex items-center">
-                        <div style={{ color:"#27AE60" }} className="mr-6 py-2 px-4 rounded-l-full rounded-r-full inline-flex border items-center">
-                            <FontAwesomeIcon className="text-xs mr-2" icon={faCircle}/> 
-                            <span className="text-sm">Reconcilled</span>
-                        </div>
-                        <div>
-                            <FontAwesomeIcon className="text-grey-400 text-2xl" icon={faAngleDown} />
-                        </div>
-                    </td>
-                </tr>
             </tbody>
         </table>
     </div>
