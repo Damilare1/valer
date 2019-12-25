@@ -24,19 +24,7 @@ module.exports = {
       white: '#fff',
 
       // "Refactoring UI" colour palette 9 (Light Blue <Vivid>). ish.
-      // base 'tivo-cyan' is between colours 4 and 5 (colour-4 >= tivo-cyan >= colour-5)
-      'tivo-cyan-100': '#E3F8FF',
-//      'tivo-cyan-200': '#B3ECFF',
-//      'tivo-cyan-300': '#81DEFD',
-//      'tivo-cyan-400': '#5ED0FA',
-//      'tivo-cyan-500': '#40C3F7',
-      'tivo-cyan-600': '#209fed',
-      'tivo-cyan-700': '#127FBF',
-      'tivo-cyan-800': '#0B69A3',
-//      'tivo-cyan-900': '#035388',
-
-      'tivo-magenta': '#de007b',
-      'tivo-yellow': '#ffed4a',
+     customBlue: '#1875F0',
 
       grey: {
         100: '#f7fafc',
@@ -48,6 +36,9 @@ module.exports = {
         700: '#4a5568',
         800: '#2d3748',
 //        900: '#1a202c',
+      },
+      'custom-grey': {
+        800: '#979797',
       },
       red: {
 //        100: '#fff5f5',
@@ -159,6 +150,7 @@ module.exports = {
       '5': '1.25rem',
       '6': '1.5rem',
       '8': '2rem',
+      '9': '2.25rem',
       '10': '2.5rem',
       '12': '3rem',
       '16': '4rem',
@@ -209,6 +201,7 @@ module.exports = {
       default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
       md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
       lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      custom: '0px 4px 10px rgba(79, 79, 79, 0.07)',
 //      xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
 //      '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
 //      inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
@@ -272,6 +265,12 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      roboto: [
+        'roboto',
+      ],
+      OpenSans: [
+        'Open Sans',
+      ]
     },
     fontSize: {
       xs: '0.75rem',
@@ -286,15 +285,15 @@ module.exports = {
       '6xl': '4rem',
     },
     fontWeight: {
-//      hairline: '100',
-//      thin: '200',
+      hairline: '100',
+      thin: '200',
       light: '300',
       normal: '400',
       medium: '500',
-//      semibold: '600',
+      semibold: '600',
       bold: '700',
       extrabold: '800',
-//      black: '900',
+      black: '900',
     },
     height: theme => ({
       auto: 'auto',
@@ -392,7 +391,8 @@ module.exports = {
     },
     opacity: {
       '0': '0',
-//      '25': '0.25',
+      '10': '0.1',
+      '20': '0.2',
       '50': '0.5',
 //      '75': '0.75',
       '100': '1',
