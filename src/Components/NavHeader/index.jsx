@@ -4,7 +4,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faBell, faUserCircle} from '@fortawesome/free-regular-svg-icons';
 
 const NavHeader = () => (
-    <div className="absolute left-0 right-0 top-0 bottom-0 bg-white shadow-custom h-16">
+    <div className="absolute left-0 right-0 top-0 bottom-0 bg-white shadow-custom h-20">
        <a style={{ left:"2.92%", right:"86.46%", top:"25%", bottom:"26.67%", fontSize: 24, lineHeight: '28px', }}
         className="absolute font-roboto not-italic font-black text-right text-customBlue" href="/#">
             TransMonitor

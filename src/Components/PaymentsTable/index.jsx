@@ -4,7 +4,7 @@ import { faSearch, faCircle, faAngleDown } from '@fortawesome/free-solid-svg-ico
 import { PaidItems } from '../Data';
 
 const Payment = () => (
-    <div style={{ top: 567, left: 290 }} className="absolute px-4 w-4/5" >
+    <div className="px-4 w-full" >
         <h4 className="text-2xl">Payments</h4>
         <div className="inline-flex my-4 w-full items-center">
             <p className="w-1/4 mr-2 text-sm">Showing <span className="text-customBlue">20</span> out of 500 payments</p>
@@ -35,7 +35,7 @@ const Payment = () => (
             <tbody>
                 {
                     PaidItems.map(item => (
-                        <tr className="border-b border-grey-500 text-sm">
+                        <tr className="border-b border-grey-500 text-sm bg-white">
                         <td className="flex items-center px-10 py-5">
                             <p 
                                 className="rounded-full bg-grey-800 text-center text-white flex items-center justify-center mr-6" 

@@ -6,7 +6,7 @@ import Merchant from './Components/Merchant';
 import Button from './Components/Button';
 
 const SideMenu = () => (
-    <div style={{ height: '100vh'}} className="w-1/5 left-1 top-0 bg-white absolute mt-16">
+    <div style={{ height: '100vh'}} className="w-1/5 left-1 top-0 bg-white absolute mt-24">
         <Button />
         <Main />
         <Payment />
